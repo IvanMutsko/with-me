@@ -1,0 +1,16 @@
+[
+  { "id": 1, "name": "Bicycle", "photo": "/images/slides/bicycle.jpg" },
+  { "id": 2, "name": "Board Games", "photo": "/images/slides/board-games.jpg" },
+  { "id": 3, "name": "Cinema", "photo": "/images/slides/cinema.jpg" },
+  {
+    "id": 4,
+    "name": "Computer Games",
+    "photo": "/images/slides/computer-games.jpg"
+  },
+  { "id": 5, "name": "Football", "photo": "/images/slides/football.jpg" },
+  { "id": 6, "name": "Music", "photo": "/images/slides/music.jpg" },
+  { "id": 7, "name": "Outdoor", "photo": "/images/slides/outdoor.jpg" },
+  { "id": 8, "name": "Picnic", "photo": "/images/slides/picnic.jpg" },
+  { "id": 9, "name": "Sea", "photo": "/images/slides/sea.jpeg" },
+  { "id": 10, "name": "Studying", "photo": "/images/slides/studying.jpg" }
+]

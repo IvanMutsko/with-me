@@ -1,0 +1,34 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  font-size: 32px;
+  color: blue;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.menu {
+  display: none;
+
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+
+  z-index: 3;
+}
+
+.menu.open {
+  display: block;
+}
