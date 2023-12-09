@@ -17,7 +17,7 @@ export default function About() {
           <li>
             <strong>Event Creation and Management:</strong>
             <p>
-              Create and organize events effortlessly. Whether it's a small
+              Create and organize events effortlessly. Whether it is a small
               gathering, a party, or a meetup, WithMe simplifies the process of
               event planning and management.
             </p>
@@ -26,7 +26,7 @@ export default function About() {
             <strong>Find and Connect with Friends:</strong>
             <p>
               Expand your social circle by discovering new friends who share
-              your interests. WithMe's intuitive friend discovery feature helps
+              your interests. WithMe intuitive friend discovery feature helps
               you connect with like-minded individuals, fostering meaningful
               connections.
             </p>
@@ -34,10 +34,9 @@ export default function About() {
           <li>
             <strong>Real-time Event Updates:</strong>
             <p>
-              Receive real-time updates and notifications about the events
-              you're interested in. Stay informed about changes, new attendees,
-              and other important details to ensure you never miss out on the
-              fun.
+              Receive real-time updates and notifications about the events you
+              are interested in. Stay informed about changes, new attendees, and
+              other important details to ensure you never miss out on the fun.
             </p>
           </li>
           <li>
@@ -52,7 +51,7 @@ export default function About() {
             <strong>Group Chats:</strong>
             <p>
               Enjoy seamless communication with your friends and fellow
-              event-goers through WithMe's group chat feature. Share updates,
+              event-goers through WithMe group chat feature. Share updates,
               coordinate plans, and make the most of your social experience.
             </p>
           </li>
@@ -68,8 +67,8 @@ export default function About() {
             <strong>Event Recommendations:</strong>
             <p>
               Discover new and exciting events tailored to your preferences.
-              WithMe's smart recommendation system suggests events based on your
-              interests, ensuring you're always connected to activities you
+              WithMe smart recommendation system suggests events based on your
+              interests, ensuring you are always connected to activities you
               love.
             </p>
           </li>
