@@ -1,0 +1,32 @@
+.faq {
+  padding: 30px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 1200px) {
+  .faq {
+    padding: 180px 30px;
+  }
+
+  .list {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 56px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}

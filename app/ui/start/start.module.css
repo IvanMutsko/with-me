@@ -1,0 +1,278 @@
+.start {
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  margin-bottom: 10px;
+
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.messageWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.container {
+  width: 250px;
+}
+
+.container > p {
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.container > p:last-child {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.subContainer {
+  position: relative;
+  height: 220px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.secondSubContainer {
+  height: 150px;
+}
+
+.mainCircle {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--cloud-bg);
+  background-image: url("../../../public/images/avatar.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.secondSubContainer .mainCircle {
+  top: 70%;
+}
+
+.name {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.secondSubContainer .name {
+  top: 90%;
+}
+
+.topWrapper,
+.bottomWrapper {
+  position: absolute;
+  width: 75%;
+  right: 0;
+}
+
+.bottomWrapper {
+  bottom: 0;
+}
+
+.topWrapper::before,
+.bottomWrapper::before,
+.topWrapper::after,
+.bottomWrapper::after {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+
+  background-color: var(--cloud-bg);
+  border-radius: 50%;
+}
+
+.topWrapper::before {
+  bottom: -15px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.topWrapper::after {
+  bottom: -20px;
+  left: -10px;
+  width: 8px;
+  height: 8px;
+}
+
+.bottomWrapper::before {
+  top: 25px;
+  left: -5px;
+  width: 14px;
+  height: 14px;
+}
+
+.bottomWrapper::after {
+  top: 10px;
+  left: -15px;
+  width: 8px;
+  height: 8px;
+}
+
+.ellipseTitle {
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.ellipseInsideText {
+  font-size: 12px;
+  background-color: var(--cloud-bg);
+
+  padding: 20px 10px;
+
+  text-align: center;
+  border-radius: 50%;
+}
+
+.signature {
+  text-align: center;
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  padding: 30px 20px;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 56px;
+    margin-bottom: 78px;
+    text-align: left;
+  }
+
+  .location {
+    font-size: 34px;
+  }
+
+  .messageWrap {
+    position: relative;
+    width: 1100px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .container:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .container {
+    width: 800px;
+  }
+
+  .container > p {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 50px;
+  }
+
+  .container > p:last-child {
+    padding-right: 75px;
+  }
+
+  .subContainer {
+    height: 400px;
+    width: 600px;
+    margin-bottom: 50px;
+  }
+
+  .secondSubContainer {
+    height: 250px;
+  }
+
+  .mainCircle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .secondSubContainer .mainCircle {
+    top: 60%;
+  }
+
+  .name {
+    top: 75%;
+    font-size: 34px;
+  }
+
+  .topWrapper,
+  .bottomWrapper {
+    width: 75%;
+  }
+
+  .topWrapper::before {
+    bottom: -15px;
+    left: -10px;
+    width: 21px;
+    height: 21px;
+  }
+
+  .topWrapper::after {
+    bottom: -20px;
+    left: -30px;
+    width: 11px;
+    height: 11px;
+  }
+
+  .bottomWrapper::before {
+    top: 40px;
+    left: -15px;
+    width: 21px;
+    height: 21px;
+  }
+
+  .bottomWrapper::after {
+    top: 10px;
+    left: -30px;
+    width: 11px;
+    height: 11px;
+  }
+
+  .ellipseTitle {
+    padding: 0 20px;
+    font-size: 34px;
+  }
+
+  .ellipseInsideText {
+    font-size: 18px;
+    padding: 35px 20px;
+    text-align: center;
+  }
+
+  .signature {
+    padding: 100px 20px;
+    font-size: 34px;
+  }
+}

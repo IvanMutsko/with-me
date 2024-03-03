@@ -1,32 +1,36 @@
 .hero {
-  height: 90vh;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 30px;
+  width: 100%;
+  min-height: 500px;
 
-  background-image: linear-gradient(
-      rgba(0, 0, 255, 0.5),
-      rgba(255, 255, 0, 0.5)
-    ),
-    url("../../../public/images/friends.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 100px;
-
-  color: rgb(247, 250, 255);
   text-align: center;
 }
 
 .title {
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
+  font-family: var(--montserrat-font);
+  font-size: 32px;
 }
 
 .text {
-  font-size: 24px;
-  font-weight: 500;
-  font-style: italic;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    gap: 52px;
+    min-height: 810px;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
 }

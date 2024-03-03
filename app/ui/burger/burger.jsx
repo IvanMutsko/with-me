@@ -36,9 +36,11 @@ export default function Burger() {
 
   return (
     <>
-      <button className={styles.button} onClick={handleBurgerClick}>
-        {!isBurgerOpen && <HiMenu />}
-      </button>
+      {!isBurgerOpen && (
+        <button className={styles.button} onClick={handleBurgerClick}>
+          <HiMenu />
+        </button>
+      )}
 
       <div className={isBurgerOpen ? styles.open : styles.menu}>
         <div onClick={closeMenu} className={styles.overlay}>

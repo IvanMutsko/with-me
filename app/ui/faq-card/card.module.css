@@ -1,0 +1,47 @@
+.card {
+  padding: 20px;
+  border: 4px solid var(--cloud-bg);
+  border-radius: 0 20px 20px 20px;
+
+  font-size: 14px;
+}
+
+.question {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.hoverWrap {
+  max-height: 0;
+  transition: max-height var(--transition-long-duration)
+    var(--transition-timing-function);
+  overflow: hidden;
+}
+
+.card:hover .hoverWrap,
+.card:focus .hoverWrap {
+  max-height: 400px;
+  transition: max-height var(--transition-long-duration)
+    var(--transition-timing-function);
+}
+
+.answer {
+  padding: 20px;
+  border-radius: 0 10px 10px 10px;
+  font-size: 12px;
+
+  background-color: var(--cloud-bg);
+}
+
+@media (min-width: 1200px) {
+  .question {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .answer {
+    font-size: 34px;
+  }
+}

@@ -1,18 +1,22 @@
-import LoadLinks from "../loadLinks/loadLinks";
+import LoadLinks from "../load-links/load-links";
 
 import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
-      <h1 className={styles.title}>
-        Find Your <br />
-        New
-        <br />
-        Friends
-      </h1>
-      <p className={styles.text}>Create memories together!</p>
-      <LoadLinks />
+    <section className="section">
+      <div className={styles.hero}>
+        <h1 className={styles.title}>
+          Crafting Memories, Uniting Minds
+          <br />
+          for Any Ideas
+        </h1>
+        <p className={styles.text}>
+          Find your new meet up buddy for any event and activity in any city of
+          the world.
+        </p>
+        <LoadLinks />
+      </div>
     </section>
   );
 }

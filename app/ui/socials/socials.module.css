@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+  gap: 50px;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.socials a {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 0;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.socials a:hover,
+.socials a:focus {
+  color: var(--accent-text);
+}
+
+.socials svg {
+  height: 100%;
+}

@@ -1,12 +1,35 @@
 .header {
+  box-shadow: var(--header-shadow);
+}
+
+.wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 10vh;
-  padding: 5px 15px;
-  background-color: rgba(0, 255, 255, 0.611);
+  padding: 15px 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
-  width: 150px;
+  width: 90px;
+  height: 50px;
+}
+
+.navWrap {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    max-width: 1440px;
+  }
+
+  .navWrap {
+    display: flex;
+    gap: 94px;
+  }
+  .burgerWrap {
+    display: none;
+  }
 }

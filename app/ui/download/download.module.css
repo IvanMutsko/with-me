@@ -1,0 +1,26 @@
+.section {
+  background-color: var(--main-bg);
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 56px;
+    margin-bottom: 78px;
+  }
+}

@@ -1,20 +1,43 @@
 .footer {
+  background-color: var(--footer-bg);
+}
+
+.wrap {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+
   align-items: center;
-  padding: 20px;
-  background-color: rgb(3, 10, 24);
-  color: #fff;
-  gap: 20px;
+  padding: 15px 30px 40px 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-height: 210px;
 }
 
-.socialList {
+.logo {
+  width: 90px;
+  height: 50px;
+}
+
+.navWrap {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
-.socialLink {
-  display: inline-block;
-  font-size: 28px;
+@media (min-width: 1200px) {
+  .wrap {
+    max-width: 1440px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .navWrap {
+    flex-direction: row;
+    gap: 80px;
+  }
 }

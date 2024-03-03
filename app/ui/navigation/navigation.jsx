@@ -1,31 +1,26 @@
-"use client";
-
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
-import { IoClose } from "react-icons/io5";
-import scrollToSection from "../../lib/scrollToSection";
+
+import { IoClose, IoLogoTiktok } from "react-icons/io5";
+import { AiFillInstagram } from "react-icons/ai";
 
 import styles from "./navigation.module.css";
 
 const links = [
   {
-    name: "About App",
-    path: "/about",
+    name: "About Us",
+    path: "/#about",
   },
   {
-    name: "Events",
-    path: "/events",
+    name: "FAQ",
+    path: "/#faq",
   },
   {
     name: "Blog",
-    path: "/blog",
+    path: "/#blog",
   },
 ];
 
 export default function Navigation({ closeMenu }) {
-  const pathname = usePathname();
-  const router = useRouter();
-
   return (
     <div className={styles.wrap}>
       <button
@@ -40,6 +35,7 @@ export default function Navigation({ closeMenu }) {
           {links.map((link) => (
             <li key={link.name}>
               <Link
+                className={styles.navLink}
                 href={link.path}
                 onClick={() => {
                   closeMenu();
@@ -50,19 +46,31 @@ export default function Navigation({ closeMenu }) {
             </li>
           ))}
         </ul>
-        <button
-          type="button"
+        <div className={styles.socials}>
+          <Link
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillInstagram />
+          </Link>
+          <Link
+            href="https://www.tiktok.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoTiktok />
+          </Link>
+        </div>
+        <Link
           className={styles.button}
+          href="#download"
           onClick={() => {
-            if (pathname !== "/") {
-              router.push("/");
-            }
-            scrollToSection("download");
             closeMenu();
           }}
         >
-          Download App
-        </button>
+          Get the App
+        </Link>
       </nav>
     </div>
   );
